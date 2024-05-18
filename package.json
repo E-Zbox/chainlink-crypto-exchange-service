@@ -4,12 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc && tsc-alias",
     "dev": "nodemon ./src/index.ts",
+    "start": "node ./dist/index.js",
+    "prod": "npm run build && npm run start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/E-Zbox/chainlink-crypto-exchange-service"
+  },
+  "author": "Ononogbu Ebenezer",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/E-Zbox/chainlink-crypto-exchange-service/issues"
+  },
+  "homepage": "https://github.com/E-Zbox/chainlink-crypto-exchange-service#readme",
+  "keywords": [],
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
