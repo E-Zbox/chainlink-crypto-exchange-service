@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "es2021",
+        "module": "CommonJS",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node",
+        "pretty": true,
+        "sourceMap": true,
+        "outDir": "./dist",
+        "baseUrl": "./",
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+        "lib": [
+            "ES2021.String",
+            "DOM",
+            "DOM.Iterable"
+        ],
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"],
+    "ts-node": {
+        "require": ["tsconfig-paths/register"]
+    }
+}
