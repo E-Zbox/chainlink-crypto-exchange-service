@@ -81,11 +81,11 @@ export const getGlobalCryptoMetrics =
           },
           stablecoin_market_cap: {
             text: stablecoin_market_cap,
-            isPercent: true,
+            isPercent: false,
           },
           derivatives_24h_percentage_change: {
             text: derivatives_24h_percentage_change,
-            isPercent: false,
+            isPercent: true,
           },
           total_market_cap: {
             text: total_market_cap,
@@ -93,19 +93,19 @@ export const getGlobalCryptoMetrics =
           },
           total_market_cap_yesterday_percentage_change: {
             text: total_market_cap_yesterday_percentage_change,
-            isPercent: false,
+            isPercent: true,
           },
           total_volume_24h_yesterday_percentage_change: {
             text: total_volume_24h_yesterday_percentage_change,
-            isPercent: false,
+            isPercent: true,
           },
           altcoin_market_cap: {
             text: altcoin_market_cap,
-            isPercent: true,
+            isPercent: false,
           },
           altcoin_volume_24h: {
             text: altcoin_volume_24h,
-            isPercent: true,
+            isPercent: false,
           },
         },
         error: "",
