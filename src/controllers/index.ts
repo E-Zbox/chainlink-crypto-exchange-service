@@ -15,3 +15,7 @@ export const getGlobalCryptoMetricsController = async (
     next(error);
   }
 };
+
+export const getHealthCheck = (req: Request, res: Response) => {
+  res.status(200).json({ data: null, message: "I'm alive", success: true });
+};
