@@ -44,13 +44,17 @@ export const getGlobalCryptoMetrics =
         defi_volume_24h,
         defi_market_cap,
         defi_24h_percentage_change,
-        stablecoin_market_cap,
-        derivatives_24h_percentage_change,
-        total_market_cap,
-        total_market_cap_yesterday_percentage_change,
-        total_volume_24h_yesterday_percentage_change,
-        altcoin_market_cap,
-        altcoin_volume_24h,
+        quote: {
+          USD: {
+            total_market_cap,
+            stablecoin_market_cap,
+            derivatives_24h_percentage_change,
+            total_market_cap_yesterday_percentage_change,
+            total_volume_24h_yesterday_percentage_change,
+            altcoin_market_cap,
+            altcoin_volume_24h,
+          },
+        },
       } = data;
 
       response = {
@@ -85,7 +89,7 @@ export const getGlobalCryptoMetrics =
           },
           total_market_cap: {
             text: total_market_cap,
-            isPercent: true,
+            isPercent: false,
           },
           total_market_cap_yesterday_percentage_change: {
             text: total_market_cap_yesterday_percentage_change,
