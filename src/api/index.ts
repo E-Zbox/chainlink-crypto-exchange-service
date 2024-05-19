@@ -13,8 +13,6 @@ const coinmarketcapHeader = {
   "X-CMC_PRO_API_KEY": COIN_MARKETCAP_API_KEY,
 };
 
-console.log(coinmarketcapHeader);
-
 export const getGlobalCryptoMetrics =
   async (): Promise<IGlobalCryptoMetricsResponse> => {
     let response: IGlobalCryptoMetricsResponse = {
